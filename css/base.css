@@ -1,0 +1,1153 @@
+html
+
+{
+
+    margin:                 1ex;
+
+    font-family:            'Open Sans', sans-serif;
+
+    font-size:              1em;
+
+    color:                  #000000;
+
+    background:             url(../img/noise-white.jpg) #f5f5f5;
+
+}
+
+
+
+body
+
+{
+
+    margin:                 5.5em auto;
+
+    max-width:              42em;
+
+}
+
+
+
+img
+
+{
+
+    border:                 0;
+
+}
+
+
+
+li
+
+{
+
+    list-style-type:        none;
+
+}
+
+
+
+body > .section
+
+{
+
+    border-radius:          12px;
+
+    margin-bottom:          1em;
+
+    background:             white;
+
+    box-shadow:             0 0 7px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+body > .section > .header
+
+{
+
+    display:                table;
+
+    width:                  100%;
+
+    height:                 1.8em;
+
+    border-radius:          12px 12px 0 0;
+
+    font-size:              1.5em;
+
+    /*font-weight:            600;*/
+
+    border-bottom:          1px solid #ddd;
+    
+    background:             -webkit-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
+
+    background:             linear-gradient(to bottom, #ffffff 0%, #eaeaea 100%);
+    
+   
+}
+
+
+
+body > .section > .header > .label
+
+{
+
+    display:                table-cell;
+
+    vertical-align:         bottom;
+
+    bottom:                 0;
+
+    padding:                0.3em 0.5em;
+
+}
+
+
+
+body > .section > .header > .side
+
+{
+
+    display:                table-cell;
+
+    vertical-align:         bottom;
+
+    text-align:             right;
+
+    bottom:                 0;
+
+    right:                  0;
+
+    padding:                0.1em 0.5em;
+
+}
+
+
+
+body > .section > .content
+
+{
+
+    overflow:               hidden;  /* == Required for rolling configs in and out */
+
+}
+
+
+
+#configs .config
+
+{
+
+    padding:                0.8em;
+
+    border-bottom:          1px solid #ddd;
+
+}
+
+
+
+#configs .config > .cancel
+
+{
+
+    float:                  left;
+
+    width:                  24px;
+
+    margin-right:           16px;
+
+
+
+}
+
+
+
+#configs .config > .cancel img
+
+{
+
+    width:                  24px;
+
+}
+
+
+
+#configs .config > .content
+
+{
+
+    color:                  #444;
+
+    padding-bottom: 		0.2em;
+
+}
+
+
+
+#configs .config > .content > .section
+
+{
+
+   /* margin-left:            40px;*/
+    margin-left:            7%;
+    /*margin-left:			0;   Duncan's fix for iphone size*/
+}
+
+
+
+#configs .config > .content > .offset_section
+
+{
+
+    margin-top:             2em;
+
+}
+
+
+
+#configs .config > .content > .section > .header
+
+{
+
+    overflow:               auto;
+
+	padding-bottom: 		1.2em;
+
+}
+
+
+
+#configs .config > .content > .section > .header > .label
+
+{
+
+    float:                  left;
+
+    font-size:              1.2em;
+
+    line-height:            1.1em;
+
+    width:					52%;
+}
+
+
+
+#configs .config > .content > .section > .header > .label > .description
+
+{
+
+    font-size:              0.6em;
+
+    color:                  #aaa;
+
+}
+
+
+
+#configs .config > .content > .section > .header > .value
+
+{
+
+    float:                  right;
+
+    padding-right:          0.3em;
+
+    font-weight:            600;
+
+    font-size:              1.7em;
+
+    color:                  #69caff;
+
+}
+
+
+
+#configs .config > .content > .section > .options
+
+{
+
+    overflow:               hidden; /* == Try and do away with this */
+
+    /*padding-top:            0.5em;*/
+
+    font-size: 				0.9em;
+
+}
+
+
+
+#configs .config > .content > .section > .options > .label
+
+{
+
+    display:                inline-block;
+
+    width:                  56px;
+
+    vertical-align:         top;
+
+    padding-top:            10px;
+
+    text-align:             right;
+
+}
+
+
+
+
+
+
+
+#configs .config > .content > .section > .options > .value
+
+{
+
+    float: right;
+
+    display:                inline-block;
+
+    padding-right:          0.3em;
+
+    font-size:              1.7em;
+
+    font-weight:            600;
+
+    color:                  #67c5ff;
+
+}
+
+
+
+.pattern_options
+
+{
+
+    float:                  left;
+
+   /* min-height:             70px;*/
+
+    padding-right:          12px;
+
+}
+
+
+
+.pattern_suboptions
+
+{
+
+    float:                  left;
+
+ }
+
+
+
+.pattern_suboptions .switch-remee
+
+{
+
+    float:                  left;
+
+    width:                  auto !important;
+
+   /* height:                 2.3em !important;*/
+
+   /* height:                 31px !important;*/
+
+    margin-left:            12px;
+
+}
+
+
+
+.pattern_suboptions .switch-remee label
+
+{
+
+    width:                  4em !important;
+
+    /* width:                  5em !important;*/
+
+   /* line-height:            2.3em !important;
+
+    font-size:              1em;*/
+
+}
+
+
+
+.pattern_image
+
+{
+
+    float:                  right;
+
+    vertical-align:         middle;
+
+}
+
+
+
+
+
+#configs .config > .content > .section:first-child
+
+{
+
+    /*margin-left:            0;*/
+
+}
+
+
+
+#configs .config > .content > .section:last-child
+
+{
+
+    /*margin-bottom:          0;*/
+
+    /*padding-bottom:         0;*/
+
+    /*border-bottom:          none;*/
+
+}
+
+
+
+body > .section > .footer
+
+{
+
+    overflow:               auto;
+
+    border-radius:          0 0 12px 12px;
+
+    padding:                1.4em 1em 1.4em 1em;
+
+    background:             #f5f5f5;
+
+}
+
+
+
+body > .section > .footer > #configs_select
+
+{
+
+    float:                  left;
+
+    font-size:              0.8em;
+
+    z-index:                100;
+
+}
+
+
+
+body > .section > .footer > #configs_note
+
+{
+
+    float:                  right;
+
+    width:                  250px;
+
+    font-size:              0.8em;
+
+}
+
+
+
+#update_button
+
+{
+
+    font-size:              0.6em;
+
+    font-weight:            800;
+
+    color:                  #000;
+
+    background:             -webkit-linear-gradient(top, #ffd7a3 0%, #ffb95f 100%);
+
+    background:             linear-gradient(to bottom, #ffd7a3 0%, #ffb95f 100%);
+
+}
+
+#update_button:hover
+
+{
+
+    background:             -webkit-linear-gradient(top, #fff7b3 0%, #ffc96f 100%);
+
+    background:             linear-gradient(to bottom, #fff7b3 0%, #ffc96f 100%);
+
+}
+
+
+
+#blinker > .content
+
+{
+
+    padding:                1em;
+
+    text-align:             center;
+
+    height: 				17em; /*Duncans config block fix*/
+}
+
+
+
+#blinker_info
+
+{
+
+    height:                 6em;
+    padding-top: 15px;
+}
+
+
+
+#blinker_info > div
+
+{
+
+    position:               relative;
+
+    top:                    0;
+
+    left:                   0;
+
+}
+
+
+
+
+#blinker_info .countdown
+
+{
+
+    position:               relative;
+
+}
+
+#blinker_info .post_message .success
+{
+    float:                  left;
+    margin:                 3em 0 0 5em;
+}
+
+#blinker_info .post_message .failure
+{
+    float:                  right;
+    margin:                 3em 5em 0 0;
+}
+
+#blinker_info .countdown .bar
+
+{
+      
+    width:                  80%;
+    height:                 18px;
+    margin:                 0px auto 0px auto;
+    border:                 1px solid #666;
+    
+
+}
+
+
+
+#blinker_info .countdown .bar .inner
+
+{
+
+    height:                 18px;
+
+    background:             #69caff;
+
+}
+
+
+
+#blinker_clock, #blinker_data
+
+{
+
+    display:                inline-block;
+
+    *display:               inline; /* Oh boy IE8 hacks */
+
+    *zoom:                  1;
+
+    z-index:                99;
+
+    width:                  48%;
+
+    height:                 150px;
+
+    border:                 1px solid #d0d0d0;
+
+}
+
+
+
+
+
+#user_info
+
+{
+
+    position:               fixed;
+
+    top:                    0;
+
+    left:                   0;
+
+    width:                  100%;
+
+    height:                 3em;
+
+    z-index:                4;
+
+    padding:                0;
+
+    border-radius:          0 0 0 0;
+
+    box-shadow:             0 0 7px rgba(0, 0, 0, 0.5);
+
+    background:             -webkit-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
+
+    background:             linear-gradient(to bottom, #ffffff 0%, #eaeaea 100%);
+
+}
+
+#user_info > .inner
+
+{
+
+    padding:                0.25em 0.3em 0.2em 0.5em;
+
+}
+
+#user_info > .inner form
+
+{
+
+    float:                  right;
+
+    margin:                 0;
+
+    padding-top:            0.2em;
+
+}
+
+
+
+#short_url
+
+{
+
+    position:               fixed;
+
+    bottom:                 0;
+
+    left:                   0;
+
+    width:                  100%;
+
+    height:                 3em;
+
+    padding:                0;
+
+    border-radius:          0 0 0 0;
+
+    box-shadow:             0 0 7px rgba(0, 0, 0, 0.5);
+
+    background:             -webkit-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
+
+    background:             linear-gradient(to bottom, #ffffff 0%, #eaeaea 100%);
+
+	z-index:				5;
+
+}
+
+#short_url > .inner
+
+{
+
+    padding:                0.3em 0.35em;
+
+}
+
+#short_url_button
+
+{
+
+    float: left;
+
+    font-size:              0.8em !important;
+
+}
+
+#short_url_text
+
+{
+
+    font-size: 1.25em;
+
+    padding:                4px 16px;
+
+    width:                  14em !important;
+
+    margin:                 2px;
+
+    border-radius:          4px;
+
+    border:                 1px solid #ebc28c;
+
+    background:             white;
+
+}
+
+
+
+#tint_overlay
+
+{
+
+    position:               fixed;
+
+    z-index:                98;
+
+    top:                    0;
+
+    left:                   0;
+
+}
+
+
+
+#register > .content
+
+{
+
+    padding:                1em;
+
+}
+
+
+
+#register > .content > .error
+
+{
+
+    font-size:              0.8em;
+
+    color:                  #880000;
+
+}
+
+
+
+#register > .content label
+
+{
+
+    display:                inline-block;
+
+    width:                  6em;
+
+    font-weight:            600;
+
+    font-size:              0.8em;
+
+    text-align:             right
+
+}
+
+
+
+#user_info .errors
+
+{
+
+    clear:                  both;
+
+    font-size:              0.6em;
+
+    color:                  #880000;
+
+}
+
+
+
+#user_info > .inner > div a
+
+{
+
+    color:                  #339dcd;
+
+    font-size:              0.75em;
+
+}
+
+
+
+#user_info > .inner > div a:hover
+
+{
+
+    color:                  #43addd;
+
+}
+
+
+
+#user_info > .inner .centered
+
+{
+
+    clear:                  both;
+
+    float:                  right;
+
+    padding-top:            7px;
+
+}
+
+
+
+#saved_configs_select
+
+{
+
+    float:                  left;
+
+    margin-top:             2px;
+
+}
+
+
+
+#saved_configs_select a
+
+{
+
+    font-size:              0.8em !important;
+
+}
+
+
+
+#saved_configs_select li ul li a.delete
+
+{
+
+    width:                  auto;
+
+    border-radius:          4px;
+
+    border:                 1px solid transparent;
+
+}
+
+
+
+#saved_configs_select li ul li a.delete:hover
+
+{
+
+    background:             #ffcccc;
+
+    border:                 1px solid #cc8888;
+
+}
+
+
+
+#save_config_form
+
+{
+
+    float:                  left;
+
+}
+
+
+
+
+
+.ui-button
+
+{
+
+    padding:                0.1em 0.5em;
+
+    color:                  #ffffff;
+
+    font-weight:            bold;
+
+    font-size:              0.8em;
+
+    background:             -webkit-linear-gradient(top, #69caff 0%, rgb(54, 171, 224) 100%);
+
+    background:             linear-gradient(to bottom, #69caff 0%, rgb(54, 171, 224) 100%);
+
+}
+
+
+
+.ui-button:hover
+
+{
+
+    background:             -webkit-linear-gradient(top, #79daff 0%, #43addd 100%);
+
+    background:             linear-gradient(to bottom, #79daff 0%, #43addd 100%);
+
+}
+
+
+
+input[type="text"], input[type="password"]
+
+{
+
+    padding:                0.6em 0.4em;
+
+    border-radius:          4px;
+
+    border:                 1px solid #ddd;
+
+    background:             -webkit-linear-gradient(top, #ffffff 0%, #fafafa 100%);
+
+    background:             linear-gradient(to bottom, #ffffff 0%, #fafafa 100%);
+
+}
+
+
+
+.ui-menu
+
+{
+
+    display:                inline-block;
+
+    width:                  auto;
+
+    z-index:                106;
+
+}
+
+
+
+.ui-menu li
+
+{
+
+    white-space:            nowrap;
+
+}
+
+
+
+.ui-menu > .ui-menu-item
+
+{
+
+    width:                  auto;
+
+}
+
+
+
+.ui-menu a
+
+{
+
+    display:                inline-block !important;
+
+    width:                  12em;
+
+    overflow:               hidden;
+
+    border-radius:          0 !important;
+
+    border:                 none !important;
+
+    background:             transparent;
+
+    text-decoration:        underline;
+
+    font-size:              1.3em;
+
+    padding:                0.1em 0.5em !important;
+
+    margin:                 0 !important;
+
+}
+
+
+
+.ui-menu a:hover
+
+{
+
+    font-size:              1.3em;
+
+    background:             #d6e6ec;
+
+    border-radius:          0;
+
+    border:                 none !important;
+
+    padding:                0.1em 0.5em !important;
+
+    margin:                 0 !important;
+
+}
+
+
+
+.ui-slider
+
+{
+
+    display:                inline-block;
+
+    margin:                 10px 6px 5px 6px;
+
+    width:                  65%;
+
+    min-width:              10em;
+
+    border:                 1px solid #ddd;
+
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.ui-slider-range
+
+{
+
+    background:            #69caff;
+
+}
+
+.ui-slider-handle
+
+{
+
+    background:             #f5f5f5 !important;
+
+    /*background:             #d6e6ec !important;*/
+
+    border:                 1px solid #888 !important;
+
+}
+
+
+
+.ui-effects-wrapper
+
+{
+
+    border-bottom:          1px solid #aaa !important;
+
+}
+
+
+
+
+
+.switch-remee
+
+{
+
+   /* width:                  80% !important;*/
+
+   /* width:                  35% !important;*/
+
+    text-align:             center;
+
+    background:             #f5f5f5;
+
+    border-radius:          2px;
+
+    border:                 1px solid #ccc;
+
+    font-size: 				0.9em;
+
+}
+
+
+
+.switch-remee .slide-button
+
+{
+
+    padding:                0.1em 0.5em;
+
+    color:                  #ffffff;
+
+    background:             #69caff !important;
+
+   /* border-radius:          2px;
+
+    border:                 1px solid #888 !important;*/
+
+    box-shadow: inset 0 1px 7px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+.dd-container
+
+{
+
+    float:                  left;
+
+}
+
+
+
+.dd-option-selected
+
+{
+
+    background:             #d6e6ec;
+
+}
+
+
+
+.dd-selected-text
+
+{
+
+    font-weight:            normal;
+
+}
+
+
+@media only screen and (max-width: 450px) {
+
+#configs .config > .content > .section {
+
+margin-left:			0;
+	}
+
+#configs .config > .content > .section > .options > .label {
+
+width: auto;
+	}
+	
+	
+}
+
