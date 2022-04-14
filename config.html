@@ -1,24 +1,24 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
 <head>
     <title>Remee Blinker</title>
-    <link rel="stylesheet" type="text/css"
-          href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
-    <link rel="stylesheet" type="text/css" href="css/custom-theme/jquery-ui-1.9.0.custom.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.dumbselect.css">
-    <link rel="stylesheet" type="text/css" href="css/toggle-switch.css">
-    <link rel="stylesheet" type="text/css" href="css/base.css">
-    <link rel="shortcut icon" href="favicon.png">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"
+          type="text/css">
+    <link href="css/custom-theme/jquery-ui-1.9.0.custom.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.dumbselect.css" rel="stylesheet" type="text/css">
+    <link href="css/toggle-switch.css" rel="stylesheet" type="text/css">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="favicon.png" rel="shortcut icon">
     <script src="js/jquery-1.9.1.js" type="text/javascript"></script>
-        <script type="text/javascript" src="js/jquery-ui-1.10.1.custom.js"></script>
-        <script type="text/javascript" src="js/jquery.dumbselect.js"></script>
-        <script type="text/javascript" src="js/jquery.watermark.js"></script>
-                    <script type="text/javascript" src="js/blinker.js"></script>
-                    <script type="text/javascript" src="js/blinker_ui.js"></script>
-                    <script type="text/javascript" src="js/blinker_user.js"></script>
-            </head>
-    <body>
+    <script src="js/jquery-ui-1.10.1.custom.js" type="text/javascript"></script>
+    <script src="js/jquery.dumbselect.js" type="text/javascript"></script>
+    <script src="js/jquery.watermark.js" type="text/javascript"></script>
+    <script src="js/blinker.js" type="text/javascript"></script>
+    <script src="js/blinker_ui.js" type="text/javascript"></script>
+    <script src="js/blinker_user.js" type="text/javascript"></script>
+</head>
+<body>
+
 
 <div id="tint_overlay"></div>
 
@@ -28,10 +28,10 @@
             Customize your dream signal
         </div>
     </div>
-    <div id="configs" class="content">
+    <div class="content" id="configs">
 
         <!-- INITIAL DELAY -->
-        <div id="initial_delay" class="config">
+        <div class="config" id="initial_delay">
             <div class="cancel">
                 <a href="#" onclick="remove_config('initial_delay')"><img src="img/close.png"></a>
             </div>
@@ -42,7 +42,7 @@
                             Initial Delay<br>
                             <span class="description">How long you want to sleep before Remee starts showing patterns</span>
                         </div>
-                        <div id="initial_delay_value" class="value">
+                        <div class="value" id="initial_delay_value">
                             3h 30m
                         </div>
                     </div>
@@ -51,12 +51,12 @@
                         <div id="initial_delay_slider"></div>
                         <div class="label">7h 30m</div>
                     </div>
-               </div>
+                </div>
             </div>
         </div>
 
         <!-- NAP DELAY -->
-        <div id="nap_delay" class="config">
+        <div class="config" id="nap_delay">
             <div class="cancel">
                 <a href="#" onclick="remove_config('nap_delay')"><img src="img/close.png"></a>
             </div>
@@ -67,11 +67,11 @@
                             Nap Delay<br>
                             <span class="description">A shorter delay before Remee starts, for napping, etc</span>
                         </div>
-                        <div id="nap_delay_value" class="value">
+                        <div class="value" id="nap_delay_value">
                             30m
                         </div>
                     </div>
-                   <div class="options">
+                    <div class="options">
                         <div class="label">10m</div>
                         <div id="nap_delay_slider"></div>
                         <div class="label">1h 25m</div>
@@ -81,7 +81,7 @@
         </div>
 
         <!-- SIGNAL INTERVAL -->
-        <div id="signal_interval" class="config">
+        <div class="config" id="signal_interval">
             <div class="cancel">
                 <a href="#" onclick="remove_config('signal_interval')"><img src="img/close.png"></a>
             </div>
@@ -90,10 +90,11 @@
                     <div class="header">
                         <div class="label">
                             Signal Interval<br>
-                            <span class="description">How long Remee waits between light patterns</span>
+                            <span
+                              class="description">How long Remee waits between light patterns</span>
                         </div>
-                        <div id="signal_interval_value" class="value">
-                           10m
+                        <div class="value" id="signal_interval_value">
+                            10m
                         </div>
                     </div>
                     <div class="options">
@@ -102,31 +103,48 @@
                         <div class="label">31m</div>
                     </div>
                 </div>
-               <!--   <div class="section">  -->
+                <!--   <div class="section">  -->
                 <div class="section offset_section">
                     <div class="header">
                         <div class="label">
                             Wiggle<br>
-                            <span class="description">Introduce randomness to the signal interval</span>
+                            <span
+                              class="description">Introduce randomness to the signal interval</span>
                         </div>
-                        <div id="signal_wiggle_value" class="value">
+                        <div class="value" id="signal_wiggle_value">
                             Off
                         </div>
                     </div>
                     <div style="width:200px;"> <!-- mine -->
-                    <div class="options switch switch-three switch-remee">
-                        <input id="signal_wiggle_off_radio" name="signal_wiggle" type="radio" value="0" checked="checked" onclick="switchcolor('wiggle', 'signal_wiggle_off_radio_label')"><label id="signal_wiggle_off_radio_label" for="signal_wiggle_off_radio" style="color:white;">Off</label>
-                        <input id="signal_wiggle_light_radio" name="signal_wiggle" type="radio" value="1" onclick="switchcolor('wiggle', 'signal_wiggle_light_radio_label')" ><label id="signal_wiggle_light_radio_label" for="signal_wiggle_light_radio">Light</label>
-                        <input id="signal_wiggle_heavy_radio" name="signal_wiggle" type="radio" value="2" onclick="switchcolor('wiggle', 'signal_wiggle_heavy_radio_label')"><label id="signal_wiggle_heavy_radio_label" for="signal_wiggle_heavy_radio">Heavy</label>
-                        <span class="slide-button"></span>
-                    </div>
-                    </div>	<!-- mine -->
+                        <div class="options switch switch-three switch-remee">
+                            <input checked="checked" id="signal_wiggle_off_radio"
+                                   name="signal_wiggle"
+                                   onclick="switchcolor('wiggle', 'signal_wiggle_off_radio_label')"
+                                   type="radio"
+                                   value="0"><label
+                          for="signal_wiggle_off_radio" id="signal_wiggle_off_radio_label"
+                          style="color:white;">Off</label>
+                            <input id="signal_wiggle_light_radio" name="signal_wiggle"
+                                   onclick="switchcolor('wiggle', 'signal_wiggle_light_radio_label')"
+                                   type="radio"
+                                   value="1"><label
+                          for="signal_wiggle_light_radio"
+                          id="signal_wiggle_light_radio_label">Light</label>
+                            <input id="signal_wiggle_heavy_radio" name="signal_wiggle"
+                                   onclick="switchcolor('wiggle', 'signal_wiggle_heavy_radio_label')"
+                                   type="radio"
+                                   value="2"><label
+                          for="signal_wiggle_heavy_radio"
+                          id="signal_wiggle_heavy_radio_label">Heavy</label>
+                            <span class="slide-button"></span>
+                        </div>
+                    </div>  <!-- mine -->
                 </div>
             </div>
         </div>
 
         <!-- BRIGHTNESS -->
-        <div id="brightness" class="config">
+        <div class="config" id="brightness">
             <div class="cancel">
                 <a href="#" onclick="remove_config('brightness')"><img src="img/close.png"></a>
             </div>
@@ -141,17 +159,17 @@
                     <div class="options">
                         <div class="label">Low</div>
                         <div id="brightness_low_slider"></div>
-                        <div id="brightness_low_value" class="value">20%</div>
+                        <div class="value" id="brightness_low_value">20%</div>
                     </div>
                     <div class="options">
                         <div class="label">Mid</div>
                         <div id="brightness_mid_slider"></div>
-                        <div id="brightness_mid_value" class="value">40%</div>
+                        <div class="value" id="brightness_mid_value">40%</div>
                     </div>
                     <div class="options">
                         <div class="label">High</div>
                         <div id="brightness_high_slider"></div>
-                        <div id="brightness_high_value" class="value">70%</div>
+                        <div class="value" id="brightness_high_value">70%</div>
                     </div>
                 </div>
                 <div class="section offset_section">
@@ -160,25 +178,35 @@
                             Brightness Ramping<br>
                             <span class="description">Remee will increase the brightness of the signal over the night.</span>
                         </div>
-                        <div id="brightness_ramping_value" class="value">
+                        <div class="value" id="brightness_ramping_value">
                             Off
                         </div>
                     </div>
                     <div style="width:120px;"> <!-- mine -->
-                    <div class="options switch switch-remee">
-                        <input id="brightness_ramping_off_radio" name="brightness_ramping" type="radio" value="0" checked="checked" onclick="switchcolor('ramping', 'brightness_ramping_off_radio_label')">
-                        <label for="brightness_ramping_off_radio" id="brightness_ramping_off_radio_label" style="color:white;">Off</label>
-                        <input id="brightness_ramping_on_radio" name="brightness_ramping" type="radio" value="1" onclick="switchcolor('ramping', 'brightness_ramping_on_radio_label')">
-                        <label for="brightness_ramping_on_radio" id="brightness_ramping_on_radio_label">On</label>
-                        <span class="slide-button"></span>
-                    </div>
+                        <div class="options switch switch-remee">
+                            <input checked="checked" id="brightness_ramping_off_radio"
+                                   name="brightness_ramping"
+                                   onclick="switchcolor('ramping', 'brightness_ramping_off_radio_label')"
+                                   type="radio"
+                                   value="0">
+                            <label for="brightness_ramping_off_radio"
+                                   id="brightness_ramping_off_radio_label"
+                                   style="color:white;">Off</label>
+                            <input id="brightness_ramping_on_radio" name="brightness_ramping"
+                                   onclick="switchcolor('ramping', 'brightness_ramping_on_radio_label')"
+                                   type="radio"
+                                   value="1">
+                            <label for="brightness_ramping_on_radio"
+                                   id="brightness_ramping_on_radio_label">On</label>
+                            <span class="slide-button"></span>
+                        </div>
                     </div> <!-- mine -->
                 </div>
             </div>
         </div>
 
         <!-- SIGNAL 0 -->
-        <div id="signal_0" class="config">
+        <div class="config" id="signal_0">
             <div class="cancel">
                 <a href="#" onclick="remove_config('signal_0')"><img src="img/close.png"></a>
             </div>
@@ -189,19 +217,31 @@
                             Pattern 1<br>
                             <span class="description">The first pattern Remee will display</span>
                         </div>
-                        <div id="signal_0_value" class="value">Fart slow (0x)</div>
+                        <div class="value" id="signal_0_value">Fart slow (0x)</div>
                     </div>
                     <div class="options">
                         <div class="pattern_options">
-                            <select id="signal_0_pattern_select" class="pattern_select" data-mini="true" data-inline="true"></select>
+                            <select class="pattern_select" data-inline="true" data-mini="true"
+                                    id="signal_0_pattern_select"></select>
                         </div>
                         <div class="pattern_suboptions" id="signal_0_pattern_options">
-                            <select id="signal_0_loops_select" class="loop_select" data-mini="true" data-inline="true"></select>
+                            <select class="loop_select" data-inline="true" data-mini="true"
+                                    id="signal_0_loops_select"></select>
                             <div class="switch switch-remee">
-                                <input id="signal_0_speed_slow_radio" name="signal_0_speed" type="radio" value="0" checked="checked" onclick="switchcolor('pattern0', 'signal_0_speed_slow_radio_label')">
-                                <label for="signal_0_speed_slow_radio" id="signal_0_speed_slow_radio_label">Slow</label>
-                                <input id="signal_0_speed_fast_radio" name="signal_0_speed" type="radio" value="1" onclick="switchcolor('pattern0', 'signal_0_speed_fast_radio_label')">
-                                <label for="signal_0_speed_fast_radio" id="signal_0_speed_fast_radio_label"  style="color:white;">Fast</label>
+                                <input checked="checked" id="signal_0_speed_slow_radio"
+                                       name="signal_0_speed"
+                                       onclick="switchcolor('pattern0', 'signal_0_speed_slow_radio_label')"
+                                       type="radio"
+                                       value="0">
+                                <label for="signal_0_speed_slow_radio"
+                                       id="signal_0_speed_slow_radio_label">Slow</label>
+                                <input id="signal_0_speed_fast_radio" name="signal_0_speed"
+                                       onclick="switchcolor('pattern0', 'signal_0_speed_fast_radio_label')"
+                                       type="radio"
+                                       value="1">
+                                <label for="signal_0_speed_fast_radio"
+                                       id="signal_0_speed_fast_radio_label"
+                                       style="color:white;">Fast</label>
                                 <div class="slide-button"></div>
                             </div>
                         </div>
@@ -214,7 +254,7 @@
         </div>
 
         <!-- SIGNAL 1 -->
-        <div id="signal_1" class="config">
+        <div class="config" id="signal_1">
             <div class="cancel">
                 <a href="#" onclick="remove_config('signal_1')"><img src="img/close.png"></a>
             </div>
@@ -225,19 +265,31 @@
                             Pattern 2<br>
                             <span class="description">The second pattern Remee will display</span>
                         </div>
-                        <div id="signal_1_value" class="value">Fart slow (1x)</div>
+                        <div class="value" id="signal_1_value">Fart slow (1x)</div>
                     </div>
                     <div class="options">
                         <div class="pattern_options">
-                            <select id="signal_1_pattern_select" class="pattern_select" data-mini="true" data-inline="true"></select>
+                            <select class="pattern_select" data-inline="true" data-mini="true"
+                                    id="signal_1_pattern_select"></select>
                         </div>
                         <div class="pattern_suboptions" id="signal_1_pattern_options">
-                            <select id="signal_1_loops_select" class="loop_select" data-mini="true" data-inline="true"></select>
+                            <select class="loop_select" data-inline="true" data-mini="true"
+                                    id="signal_1_loops_select"></select>
                             <div class="switch switch-remee">
-                                <input id="signal_1_speed_slow_radio" name="signal_1_speed" type="radio" value="0" checked="checked" onclick="switchcolor('pattern1', 'signal_1_speed_slow_radio_label')">
-                                <label for="signal_1_speed_slow_radio" id="signal_1_speed_slow_radio_label">Slow</label>
-                                <input id="signal_1_speed_fast_radio" name="signal_1_speed" type="radio" value="1" onclick="switchcolor('pattern1', 'signal_1_speed_fast_radio_label')">
-                                <label for="signal_1_speed_fast_radio" id="signal_1_speed_fast_radio_label"  style="color:white;">Fast</label>
+                                <input checked="checked" id="signal_1_speed_slow_radio"
+                                       name="signal_1_speed"
+                                       onclick="switchcolor('pattern1', 'signal_1_speed_slow_radio_label')"
+                                       type="radio"
+                                       value="0">
+                                <label for="signal_1_speed_slow_radio"
+                                       id="signal_1_speed_slow_radio_label">Slow</label>
+                                <input id="signal_1_speed_fast_radio" name="signal_1_speed"
+                                       onclick="switchcolor('pattern1', 'signal_1_speed_fast_radio_label')"
+                                       type="radio"
+                                       value="1">
+                                <label for="signal_1_speed_fast_radio"
+                                       id="signal_1_speed_fast_radio_label"
+                                       style="color:white;">Fast</label>
                                 <div class="slide-button"></div>
                             </div>
                         </div>
@@ -250,7 +302,7 @@
         </div>
 
         <!-- SIGNAL 2 -->
-        <div id="signal_2" class="config">
+        <div class="config" id="signal_2">
             <div class="cancel">
                 <a href="#" onclick="remove_config('signal_2')"><img src="img/close.png"></a>
             </div>
@@ -261,19 +313,31 @@
                             Pattern 3<br>
                             <span class="description">The third pattern Remee will display</span>
                         </div>
-                        <div id="signal_2_value" class="value">Fart slow (2x)</div>
+                        <div class="value" id="signal_2_value">Fart slow (2x)</div>
                     </div>
                     <div class="options">
                         <div class="pattern_options">
-                            <select id="signal_2_pattern_select" class="pattern_select" data-mini="true" data-inline="true"></select>
+                            <select class="pattern_select" data-inline="true" data-mini="true"
+                                    id="signal_2_pattern_select"></select>
                         </div>
                         <div class="pattern_suboptions" id="signal_2_pattern_options">
-                            <select id="signal_2_loops_select" class="loop_select" data-mini="true" data-inline="true"></select>
+                            <select class="loop_select" data-inline="true" data-mini="true"
+                                    id="signal_2_loops_select"></select>
                             <div class="switch switch-remee">
-                                <input id="signal_2_speed_slow_radio" name="signal_2_speed" type="radio" value="0" checked="checked" onclick="switchcolor('pattern2', 'signal_2_speed_slow_radio_label')">
-                                <label for="signal_2_speed_slow_radio"  id="signal_2_speed_slow_radio_label">Slow</label>
-                                <input id="signal_2_speed_fast_radio" name="signal_2_speed" type="radio" value="1" onclick="switchcolor('pattern2', 'signal_2_speed_fast_radio_label')">
-                                <label for="signal_2_speed_fast_radio" id="signal_2_speed_fast_radio_label"  style="color:white;">Fast</label>
+                                <input checked="checked" id="signal_2_speed_slow_radio"
+                                       name="signal_2_speed"
+                                       onclick="switchcolor('pattern2', 'signal_2_speed_slow_radio_label')"
+                                       type="radio"
+                                       value="0">
+                                <label for="signal_2_speed_slow_radio"
+                                       id="signal_2_speed_slow_radio_label">Slow</label>
+                                <input id="signal_2_speed_fast_radio" name="signal_2_speed"
+                                       onclick="switchcolor('pattern2', 'signal_2_speed_fast_radio_label')"
+                                       type="radio"
+                                       value="1">
+                                <label for="signal_2_speed_fast_radio"
+                                       id="signal_2_speed_fast_radio_label"
+                                       style="color:white;">Fast</label>
                                 <div class="slide-button"></div>
                             </div>
                         </div>
@@ -290,13 +354,20 @@
         <ul id="configs_select">
             <li><a href="javascript:">Select a setting to edit</a>
                 <ul>
-                    <li id="initial_delay_add"><a href="javascript:add_config('initial_delay')">Initial Delay</a></li>
-                    <li id="nap_delay_add"><a href="javascript:add_config('nap_delay')">Nap Delay</a></li>
-                    <li id="signal_interval_add"><a href="javascript:add_config('signal_interval')">Signal Interval</a></li>
-                    <li id="brightness_add"><a href="javascript:add_config('brightness')">Brightness</a></li>
-                    <li id="signal_0_add"><a href="javascript:add_config('signal_0')">Pattern 1</a></li>
-                    <li id="signal_1_add"><a href="javascript:add_config('signal_1')">Pattern 2</a></li>
-                    <li id="signal_2_add"><a href="javascript:add_config('signal_2')">Pattern 3</a></li>
+                    <li id="initial_delay_add"><a href="javascript:add_config('initial_delay')">Initial
+                        Delay</a></li>
+                    <li id="nap_delay_add"><a href="javascript:add_config('nap_delay')">Nap
+                        Delay</a></li>
+                    <li id="signal_interval_add"><a href="javascript:add_config('signal_interval')">Signal
+                        Interval</a></li>
+                    <li id="brightness_add"><a
+                      href="javascript:add_config('brightness')">Brightness</a></li>
+                    <li id="signal_0_add"><a href="javascript:add_config('signal_0')">Pattern 1</a>
+                    </li>
+                    <li id="signal_1_add"><a href="javascript:add_config('signal_1')">Pattern 2</a>
+                    </li>
+                    <li id="signal_2_add"><a href="javascript:add_config('signal_2')">Pattern 3</a>
+                    </li>
                 </ul>
             </li>
         </ul>
@@ -329,7 +400,9 @@
                 </div>
             </div>
             <div class="message post_message">
-                Settings sent! Remee will sweep its lights if they were transferred successfully, and blink one light if they weren't. Click "Update Remee!" to try again!
+                Settings sent! Remee will sweep its lights if they were transferred successfully,
+                and blink
+                one light if they weren't. Click "Update Remee!" to try again!
                 <div class="success">
                     <img src="img/icon_success.png"><br>
                     <img src="img/mask_success.gif"><br>
@@ -343,56 +416,10 @@
                 </div>
             </div>
         </div>
-        <div id="blinker_clock"></div><div id="blinker_data"></div>
+        <div id="blinker_clock"></div>
+        <div id="blinker_data"></div>
     </div>
 </div>
+</body>
 
-<div id="user_info">
-    <div class="inner">
-
-        <div class="login_section">
-            <img src="img/headerlogo.png">
-            <form id="login_form">
-                <input id="login_username" type="text">
-                <input id="login_password" type="password">
-                <input id="login_submit" type="submit" value="Login">
-            </form>
-            <div class="centered">
-                <a href="register.html">Register</a>
-                <a href="recover_password.html">Forgot Password?</a>
-            </div>
-            <div class="errors"></div>
-        </div>
-        <div class="user_section">
-            <form id="save_config_form">
-                <input id="save_config_submit" type="submit" value="Save">
-                <input id="save_config_name" type="text">
-            </form>
-            <ul id="saved_configs_select">
-                <li>
-                    <a href="javascript:">Saved&nbsp;Settings</a>
-                    <ul id="saved_configs_options">
-                    </ul>
-                </li>
-            </ul>
-            <div class="centered">
-                <a href="config.html">Edit Account</a>
-                <a href="#" onclick="javascript:user_logout();">Logout</a>
-            </div>
-            <div class="errors"></div>
-        </div>
-    </div>
-</div>
-
-<div id="short_url">
-    <div class="inner">
-        <button id="short_url_button">Share Your Settings</button>
-        <input id="short_url_text" input="text" readonly="readonly">
-    </div>
-</div>
-
-
-    </body>
-
-<!-- Mirrored from www.sleepwithremee.com/config.php by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 24 May 2013 20:38:28 GMT -->
 </html>
